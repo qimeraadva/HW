@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Paragraph Visibility</title>
+</head>
+<body>
+    <p id="myParagraph">This is a visible paragraph.</p>
+    <button id="hideButton">Hide</button>
+    <button id="showButton" style="display: none;">Show</button>
+
+    <script>
+        const paragraph = document.getElementById('myParagraph');
+        const hideButton = document.getElementById('hideButton');
+        const showButton = document.getElementById('showButton');
+
+        hideButton.addEventListener('click', () => {
+            paragraph.style.display = 'none';
+            hideButton.style.display = 'none';
+            showButton.style.display = 'block';
+        });
+
+        showButton.addEventListener('click', () => {
+            paragraph.style.display = 'block';
+            hideButton.style.display = 'block';
+            showButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

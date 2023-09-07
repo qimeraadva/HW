@@ -1,0 +1,21 @@
+body {
+    all: unset;
+}
+.container {
+margin-left: 45%;
+margin-top: 20%;
+}
+button {
+    color: white;
+    padding: 10px 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 1.5rem;
+    background-color: #2198f5;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #1f74b5;
+    cursor: pointer;
+}
